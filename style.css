@@ -163,3 +163,116 @@ transition:opacity 1.5s ease;
     line-height:1.6
 }
 
+.back-line{
+
+    margin-top:30px;
+    font-size:14px;
+    text-decoration:none;
+}
+.back-link:hover{
+text-decoration:underline;
+
+}
+
+@media (max-width:60px){
+
+body{
+    padding:20px 0;
+}
+
+.home{
+
+    width:90vw;
+
+    height:80vh;
+    padding:40px 15px;
+    border-radius:25px;
+    overflow-y:auto;
+
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+
+}
+
+.home::-webkit-scrollbar{
+
+    display:none;
+}
+.home h1{
+
+    font-size:42px;
+}
+
+.home > p{
+
+    margin-bottom:30px;
+}
+
+.envelope-grid{
+
+    width:100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap:30px 0;
+
+    justify-items:center;
+
+}
+.envelope{
+
+    width:150px;
+
+    justify-self:center;
+
+}
+
+.envelope img{
+
+    width:150px;
+    height:115px;
+}
+
+.envelope p{
+
+    margin-top:8px;
+    font-size:14px;
+}
+
+
+.letter-page{
+
+    padding:30px 15px;
+}
+
+.letter-container{
+    width:95vw;
+    margin-top:20px;
+}
+
+.letter-text{
+
+    width:50%;
+}
+
+.letter-text h1{
+
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.letter-text p{
+
+    font-size:12px;
+    line-height:1.5;
+}
+
+.back-line{
+
+    margin-top:20px;
+    font-size:13px;
+
+}
+
+
+}
