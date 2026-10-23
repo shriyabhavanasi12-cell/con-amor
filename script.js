@@ -53,33 +53,26 @@ message:
 
 };
 
-const params=new URLSearchParams(window.location.search);
-const letterId=params.get("letter");
+const params = new URLSearchParams(window.location.search);
+const letterId = params.get("letter");
 
-const letter=letters[letterId];
+const letter = letters[letterId];
 
-if (letter){
-
-    document.getElementById("letter-title").innerHtml=letter.title;
-    document.getElementById("letter-message").textContent=letter.message;
-
-}
-else{
-document.getElementById("letter-title").textContent="Letter not found.";
-document.getElementById("letter-message").textContent="Hmm this letter doesn't seem to exist.";
-
-
-
+if (letter) {
+    document.getElementById("letter-title").innerHTML = letter.title;
+    document.getElementById("letter-message").textContent = letter.message;
+} else {
+     document.getElementById("letter-title").textContent = "Letter not found.";
+    document.getElementById("letter-message").textContent = "Hmm this letter doesn't seem to exist.";
 }
 
-const letterText=document.querySelector(".letter-text");
-const gif=document.querySelector(".opening-gif");
+const letterText = document.querySelector(".letter-text");
+const gif = document.querySelector(".opening-gif");
 
-setTimeout(()=>{
-    gif.src="images/letter-final.png";
-letterText.classList.remove("hidden");
-
-},1200);
+setTimeout(() => {
+    gif.src = "images/letter-final.png";
+    letterText.classList.remove("hidden");
+}, 1200);
 
 
 
